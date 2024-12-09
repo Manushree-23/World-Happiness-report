@@ -36,7 +36,8 @@ app.layout = dbc.Container([
         ], width=6, className='dropdown-container')
     ]),
     dbc.Row([
-        dbc.Col(dcc.Graph(id='world-map'), width=12, className='graph-container')
+        dbc.Col(dcc.Graph(id='world-map'), width=6, className='graph-container'),
+        dbc.Col(dcc.Graph(id='pie-chart'), width=6, className='graph-container')
     ]),
     dbc.Row([
         dbc.Col(html.Div(id='data-insights', className='data-insights'), width=8),
@@ -59,9 +60,6 @@ app.layout = dbc.Container([
     dbc.Row([
         dbc.Col(dcc.Graph(id='bar-chart'), width=6, className='graph-container'),
         dbc.Col(dcc.Graph(id='trend-line'), width=6, className='graph-container'),
-    ]),
-    dbc.Row([
-        dbc.Col(dcc.Graph(id='pie-chart'), width=12, className='graph-container')
     ]),
 ], fluid=True)
 
